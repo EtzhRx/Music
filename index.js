@@ -56,7 +56,6 @@ client.on("message", async message => {
 
   if (command === "prune") {
     setTimeout(prune, 1000); // Theoretically waits long enough to avoid 10008 error
-      message.channel.send("1000 Sudah di hapus")
     function prune() {
       // IDEA: Only delete messages sent by current user? Use other bot validation...
       message.channel.fetchMessages()
