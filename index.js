@@ -13,8 +13,13 @@ bot.on("message", (message) => {
      else {
       message.reply('You need to join a voice channel first!');
     }
-  }
-});
+    
+    if (message.content.startsWith(prefix + "youtube")) {
+    message.channel.send("https://www.youtube.com/channel/UC4KN0anLirlTsn95Ugrroeg");
+  
+    }
+
+  });
   
   
 
