@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 
 let prefix = "! ";
-client.on("message", (message) => {
+bot.on("message", (message) => {
   
   if (!message.content.startsWith(prefix) || message.author.bot) return;
  
