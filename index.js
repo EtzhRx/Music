@@ -14,7 +14,7 @@ client.on("message", async message => {
 
   if (command === "spam") {
     var count = 1; // Number of messages sent (modified by sendSpamMessage)
-    var maxMessages = 1000000000000000000000000000; // Change based on how many messages you want sent
+    var maxMessages = 4; // Change based on how many messages you want sent
 
     function sendSpamMessage() {
       try {
