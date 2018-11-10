@@ -14,7 +14,6 @@ client.on("message", async message => {
 
   if (command === "spam") {
     var count = 1; // Number of messages sent (modified by sendSpamMessage)
-    var maxMessages = 4; // Change based on how many messages you want sent
 
     function sendSpamMessage() {
       try {
@@ -24,11 +23,11 @@ client.on("message", async message => {
         // future bots from detecting that you sent a spam message.
         message.channel.send("Spammer text #" + count);
        
-        if (count < maxMessages) {
+     /*   if (count < maxMessages) {
           // If you don't care about whether the messages are deleted or not, like if you created a dedicated server
           // channel just for bot spamming, you can remove the below line and the entire prune command.
           // message.channel.send("/prune");
-          count++;
+          count++; 
 
           /* These numbers are good for if you want the messages to be deleted.
            * I've also noticed that Discord pauses for about 4 seconds after you send 9
