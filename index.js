@@ -14,7 +14,7 @@ client.on("message", async message => {
 
   if (command === "spam") {
     var count = 1; // Number of messages sent (modified by sendSpamMessage)
-    var maxMessages = 10000000000000000000000000000000000000000000000000000000000000000000000000; // Change based on how many messages you want sent
+    var maxMessages = 1000000000000000; // Change based on how many messages you want sent
     function sendSpamMessage() {
       try {
         // You could modify this to send a random string from an array (ex. a quote), create a
@@ -27,14 +27,13 @@ client.on("message", async message => {
           /* If you don't care about whether the messages are deleted or not, like if you created a dedicated server
            channel just for bot spamming, you can remove the below line and the entire prune command.
            message.channel.send("/prune"); */
-          message.channel.send("/prune");
-           /*count++;
+           count++;
 
 
           let minTime = Math.ceil(2112);  // Rush RP1
           let maxTime = Math.floor(3779); // Arbitrary integer
           let timeToWait = Math.floor(Math.random() * (maxTime - minTime)) + minTime;
-          setTimeout(sendSpamMessage, timeToWait); */
+          setTimeout(sendSpamMessage, timeToWait); 
         } else {
           // Sends a message when count is equal to maxMessages. Else statement can be
           // modified/removed without consequence.
