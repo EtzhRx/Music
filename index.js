@@ -23,7 +23,7 @@ client.on("message", async message => {
         // future bots from detecting that you sent a spam message.
         message.channel.send("Spammer text #" + count);
        
-     /*   if (count < maxMessages) {
+        if (count < maxMessages) {
           // If you don't care about whether the messages are deleted or not, like if you created a dedicated server
           // channel just for bot spamming, you can remove the below line and the entire prune command.
           // message.channel.send("/prune");
