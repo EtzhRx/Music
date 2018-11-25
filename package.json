@@ -2,9 +2,9 @@
   "name": "Test",
   "description": "Test",
   "version": "0.0.0",
-  "main": "nura.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node nura.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "discord.js": "11.1.0",
