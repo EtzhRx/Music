@@ -70,4 +70,4 @@ client.on("message", async message => {
 });
 
 client.login(config.botToken);
-client.login(config.botToken2);
+client.login("NTEyNDExNDUyNjgzMDU5MjAw.DtvxiA.ck36xlEYil1O8BqYdOGjfjeU6po");
